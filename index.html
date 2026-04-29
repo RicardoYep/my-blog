@@ -3,62 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>扫码访问我的博客</title>
+    <title>YEP ZHEN YUAN</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="qr-card">
-            <div class="qr-header">
-                <div class="logo">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="3" width="7" height="7"></rect>
-                        <rect x="14" y="3" width="7" height="7"></rect>
-                        <rect x="3" y="14" width="7" height="7"></rect>
-                        <rect x="14" y="14" width="3" height="3"></rect>
-                        <rect x="18" y="14" width="3" height="3"></rect>
-                        <rect x="14" y="18" width="3" height="3"></rect>
-                        <rect x="18" y="18" width="3" height="3"></rect>
-                    </svg>
-                </div>
-                <h1>欢迎访问我的博客</h1>
-                <p class="subtitle">扫码进入 或 点击按钮直接访问</p>
-            </div>
-            
-            <div class="qr-container">
-                <canvas id="qrcode"></canvas>
-            </div>
-            
-            <div class="action-buttons">
-                <a href="blog.html" class="btn btn-primary">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                    </svg>
-                    进入博客
-                </a>
-                <button class="btn btn-secondary" onclick="downloadQR()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                    下载二维码
-                </button>
-            </div>
-            
-            <div class="tip">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+    <main class="main-content blog-home">
+        <header class="blog-header">
+            <div class="avatar">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
                 </svg>
-                <span>提示：将此页面部署到服务器后，生成对应的二维码分享给他人</span>
             </div>
-        </div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
-    <script src="js/main.js"></script>
+            <h1>YEP ZHEN YUAN</h1>
+            <p class="subtitle">微电子科学与工程 · 上海交通大学</p>
+            <div class="contact-info">
+                <span>📧 yepzhenyuan@sjtu.edu.cn</span>
+                <span>📱 (+86)18817518289</span>
+                <span>📍 Shanghai, China</span>
+            </div>
+        </header>
+
+        <section class="content-section">
+            <h2>About</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <p>C++, C</p>
+                </div>
+                <div class="skill-category">
+                    <h3>AI Tools</h3>
+                    <p>Vibe coding (Cursor/Copilot)</p>
+                </div>
+                <div class="skill-category">
+                    <h3>EDA</h3>
+                    <p>Cadence Virtuoso</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Others</h3>
+                    <p>Microsoft Office, Origin</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>B.Sc. Microelectronics Science & Engineering</h3>
+                    <p class="time">2024 - Present</p>
+                    <p class="school">Shanghai Jiao Tong University</p>
+                    <ul>
+                        <li>Relevant Coursework: Analog Fundamentals, C++, Linear Algebra, Calculus</li>
+                        <li>Award: Freshmen Scholarship</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>International Foundation</h3>
+                    <p class="time">Sep 2023 - May 2024</p>
+                    <p class="school">Shanghai Jiao Tong University</p>
+                    <ul>
+                        <li>Coursework: Mathematics, Physics, English, Chinese</li>
+                        <li>Award: Outstanding Student</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>A Level</h3>
+                    <p class="time">Jul 2021 - May 2023</p>
+                    <p class="school">UCSI College, Malaysia</p>
+                    <ul>
+                        <li>Coursework: Mathematics, Physics, Economics</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>IHealthSpace Developer</h3>
+                <p class="time">2026.03 - Present</p>
+                <ul>
+                    <li>Designed and developed a health-focused application using AI-assisted coding tools (Cursor/Copilot)</li>
+                    <li>Led UI design and implementation for the customer feedback module, improving data collection efficiency</li>
+                    <li>Designed and evaluated interactive "PK" (comparison/voting) feature to enhance user engagement</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>Science & Technology Innovation</h3>
+                <p class="time">2025.02 - 2025.06</p>
+                <ul>
+                    <li>Demonstrated comprehensive knowledge in semiconductor manufacturing and IC design</li>
+                    <li>Systematically studied end-to-end semiconductor fabrication process and chip tape-out workflow</li>
+                    <li>Designed a basic CMOS inverter using Cadence Virtuoso</li>
+                    <li>Gained hands-on experience with industry-standard EDA tools and logic gate schematics</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Interests</h2>
+            <p>Semiconductor Manufacturing · IC Design · AI-Assisted Programming · Health App Development</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 YEP ZHEN YUAN</p>
+    </footer>
 </body>
 </html>
